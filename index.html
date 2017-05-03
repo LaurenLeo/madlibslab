@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="madMod">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Contrail+One|Sigmar+One" rel="stylesheet">
+  <title>Mad Libs Lab 15</title>
+</head>
+<body>
+  <h1>Mad Libs!</h1>
+    <h2>The World's Greatest Game</h2>
+    <h4>Enter words below:</h4>
+
+    <nav>
+      <a href="#!/form"><button class="linkBtn">Home</button></a>
+      <a href="#!/output"><button class="linkBtn">Results</button></a>
+    </nav>
+
+    <div>
+    <ng-view></ng-view>
+
+    </div>
+
+
+
+
+
+  <script src="lib/angular.min.js"></script>
+  <script src="lib/angular-route.min.js"></script>
+  <script src="js/module/module.js"></script>
+  <script src="js/module/config.js"></script>
+  <script src="js/controllers/form-ctrl.js"></script>
+  <script src="js/services/madlib-service.js"></script>
+  <script src="js/controllers/output-ctrl.js"></script>
+
+</body>
+</html>
